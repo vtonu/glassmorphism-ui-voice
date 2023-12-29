@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@200;400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+  background-image: url('https://i.imgur.com/S6k5GB8.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Main Glassmorphism Wrapper */
+.upper-layer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  height: 420px;
+  /* width: 20vw; */
+  width: 350px;
+  padding: 10px;
+
+  /*the alpha value controls the transparency*/
+  background: rgba(199, 199, 199, 0.3);
+
+  /* This controls the blurring effect*/
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+
+  /*Adding the shadow*/
+  box-shadow: 0 8px 32px 0 rgba(39, 39, 39, 0.18);
+
+  /* Adding our borders*/
+  border-radius: 10px;
+  border: 1px solid rgba(255, 242, 248, 0.18);
+  z-index: 4;
+}
+
+/* Glassmorphism Buttons (Clear, Deposit, Withdraw) */
+.button {
+  /* Adding Glassmorphism effect to the body*/
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(50px);
+
+  /*Adding shadow to the content*/
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+
+  /*Setting the borders of the content*/
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.11);
+  border-left: 1px solid rgba(255, 255, 255, 0.11);
+
+  padding: 10px;
+  color: rgb(46, 46, 46);
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Style button (Clear, Deposit, Withdraw) on hover */
+.button:hover {
+  cursor: pointer;
+  color: rgb(46, 46, 96);
+  background-color: rgb(0, 0, 0, 0.02);
+}
+
+/* On click buttons */
+.button:active {
+  color: rgb(46, 46, 96);
+  background-color: rgb(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 2rem;
+  font-family: Archivo Black;
+  color: white;
+}
+h6 {
+  color: rgba(32, 212, 32, 1);
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Current Balance $755.00 */
+.accountBalance {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16%;
+}
+
+/* Glassmorphism Input */
+input {
+  /* Adding Glassmorphism effect to the body*/
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(50px);
+
+  /*Adding shadow to the content*/
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+
+  /*Setting the borders of the content*/
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.11);
+  border-left: 1px solid rgba(255, 255, 255, 0.11);
+
+  padding: 10px;
+  font-weight: 700;
+  color: rgb(46, 46, 46);
+}
+
+/* Style input on focus */
+input:focus {
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Remove number input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Clear, Deposit & Withdraw buttons */
+.buttonsHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Red close (x) button in the corner */
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.closeButton:hover {
+  cursor: pointer;
+}
+.closeButton:active {
+  opacity: calc(0.65);
+}
+
+/* SAES Logo, ATM & Green Active text line spacing */
+.atmHeader {
+  line-height: 1.2;
+}
