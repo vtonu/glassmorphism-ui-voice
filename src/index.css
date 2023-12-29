@@ -81,58 +81,20 @@ body {
 h1 {
   font-size: 1.5rem;
 }
-h2 {
-  font-size: 2rem;
-  font-family: Archivo Black;
-  color: white;
+h5 {
+  font-size: 1rem;
+  color: aliceblue;
 }
+
+/* Active Text */
 h6 {
   color: rgba(32, 212, 32, 1);
   font-weight: 600;
   font-family: 'Raleway', sans-serif;
+  padding-bottom: 5%;
 }
 
-/* Current Balance $755.00 */
-.accountBalance {
-  display: flex;
-  flex-direction: column;
-  padding-top: 16%;
-}
-
-/* Glassmorphism Input */
-input {
-  /* Adding Glassmorphism effect to the body*/
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(50px);
-
-  /*Adding shadow to the content*/
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
-
-  /*Setting the borders of the content*/
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-top: 1px solid rgba(255, 255, 255, 0.11);
-  border-left: 1px solid rgba(255, 255, 255, 0.11);
-
-  padding: 10px;
-  font-weight: 700;
-  color: rgb(46, 46, 46);
-}
-
-/* Style input on focus */
-input:focus {
-  outline: none;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-/* Remove number input arrows */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-/* Clear, Deposit & Withdraw buttons */
+/* Voice Buttons */
 .buttonsHeader {
   display: flex;
   flex-direction: column;
@@ -154,5 +116,5 @@ input::-webkit-inner-spin-button {
 
 /* SAES Logo, ATM & Green Active text line spacing */
 .atmHeader {
-  line-height: 1.2;
+  line-height: 1;
 }
