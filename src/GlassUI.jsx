@@ -6,26 +6,18 @@ function GlassUI() {
         <div className="atmHeader">
           <img src={require('./saeslogo_voice.png')} width="110" alt="saeslogo" />
         </div>
-        <div className="accountBalance">
-          {/* <h6>ACTIVE</h6> */}
-          {/* <input
-            type="text"
-            value={inputValue}
-            onChange={(e) => {
-              if (e.target.value.length <= 7) {
-                setInputValue(e.target.value);
-              }
-            }}
-          /> */}
-        </div>
         <h5>SQUAD SOUNDS</h5>
         <div className="buttonsHeader">
-          <button className="button">VOICE 1</button>
-          <button className="button">VOICE 2</button>
-          <button className="button">VOICE 3</button>
-          <button className="button">VOICE 4</button>
-          <button className="button">VOICE 5</button>
-          <button className="button">VOICE 6</button>
+          <button className="button">VOICE 1 - PULL OVER!</button>
+          <button className="button">VOICE 2 - COME OUT!</button>
+          <button className="button">VOICE 3 - HANDS ON VEHICLE!</button>
+          <button className="button">VOICE 4 - SURROUNDED</button>
+          <button className="button">VOICE 5 - GET DOWN!</button>
+          <button className="button">VOICE 6 - DROP GUN!</button>
+          <button className="button">VOICE 7 - ROGER</button>
+          <button className="button">VOICE 8 - GET OUT!</button>
+          <button className="button">VOICE 9 - THE SOUND</button>
+          <button className="button">VOICE 10 - DEEZ NUTS!</button>
         </div>
       </div>
     </div>
