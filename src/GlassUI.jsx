@@ -27,15 +27,13 @@ function GlassUI() {
       <div className="upper-layer">
         <img src={require('./close.png')} width="16" alt="saeslogo" className="closeButton" />
         <div className="atmHeader">
-          <img src={require('./saeslogo_atm.png')} width="110" alt="saeslogo" />
+          <img src={require('./saeslogo_voice.png')} width="110" alt="saeslogo" />
           {/* <h2>ATM</h2> */}
           {/* <h5>Manage your account balance.</h5> */}
         </div>
         <div className="accountBalance">
           <h6>ACTIVE</h6>
-          <h5>Current Balance:</h5>
-          <h1>${balance.toFixed(2)}</h1>
-          <input
+          {/* <input
             type="number"
             value={inputValue}
             onChange={(e) => {
@@ -44,17 +42,17 @@ function GlassUI() {
               }
             }}
             max="1000000"
-          />
+          /> */}
         </div>
         <div className="buttonsHeader">
           <button className="button" onClick={clearInput}>
-            CLEAR
+            VOICE 1
           </button>
           <button className="button" onClick={deposit}>
-            DEPOSIT
+            VOICE 2
           </button>
           <button className="button" onClick={withdraw}>
-            WITHDRAW
+            VOICE 3
           </button>
         </div>
       </div>
